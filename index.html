@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>E-Buy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="icon" href="icon.jpg">
+</head>
+ 
+<body>
+
+    <div class="box">
+        <div class="cotainer">
+            <div class="top-header">
+                <span>Creat E-Buy account</span>
+                <header>Login</header>
+            </div>
+
+            <div class="input-field">
+                <input type="text" class="input" placeholder="Email" required>
+                <i class="uil uil-envelope"></i>
+            </div>
+
+            <div class="input-field">
+                <input id="pass" type="password" class="input" placeholder="Password" required>
+                <i class="uil uil-lock"></i>
+                <span class="eye" onclick="myFunction();">
+                    <i id="hide1" class="uil uil-eye"></i>
+                    <i id="hide2" class="uil uil-eye-slash"></i>
+                </span>
+            </div>
+            <div class="input-field">
+                <input type="submit" class="submit" onmouseover="mouseOver()" value="Login">
+            </div>
+            <br />
+            <div class="signup">
+                <span class="signup">Don't have an account?
+                    <label id="sila" for="c2" onclick="signup();">Signup</label>
+                </span>
+            </div>
+
+            <div class="bottom">
+                <div class="left">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember Me</label>
+                </div>
+                <div class="right">
+                    <label><a href="#">Forgot Password</a></label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
